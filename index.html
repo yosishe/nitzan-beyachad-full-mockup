@@ -1678,6 +1678,16 @@ const stations = [
   {key:'report', title:'דיווח לצוות', line:'לבקש עזרה ולעצור שיחה לבדיקה', icon:'flag', a:'michal', b:'avi'},
   {key:'block', title:'חסימת קשר', line:'להפסיק קשר עם אדם מסוים', icon:'shield-check', a:'p0', b:'p1'}
 ];
+// Profile-building entries: the full 12-step interview, or straight to the six "about me" questions.
+const profileStations = [
+  {key:'about-questions',title:'שש שאלות · קצת עליי',line:'עונים על שש שאלות, והתשובות בונות את הפרופיל',icon:'pencil'},
+  {key:'profile-interview',title:'בניית פרופיל מההתחלה',line:'כל 12 הצעדים: פרטים, תמונות, תחביבים ושש השאלות',icon:'user-round'}
+];
+function enterInterview(key){
+  setUser('previewExample','interview');
+  if(page!=='interview')return;
+  interview=key==='about-questions'?6:0;storeDraft();render(true);
+}
 const instructions = {
   phone:'רק כששניכם מסכימים, כל אחד רואה את המספר של השני. הצוות מקבל עדכון על ההחלפה.',
   waiting:'האישור שלך התקבל. המספרים נשארים פרטיים עד שיתקבל גם האישור השני.',
@@ -1696,7 +1706,7 @@ const instructions = {
 const mapBack = ()=>quiet('למפת המסע','journey','','chevron-right');
 const staffLink = kind=>quiet('הדגמה · מה הצוות רואה?','staffView',kind,'users');
 function journeyMap(){
-  return '<div class="pad stack"><div class="smallhead"><h1>מפת המסע</h1>'+listen(instructions.map)+'</div><p>בחרו מה לנסות בשיחה לדוגמה.</p><div class="list">'+stations.map(s=>actionRow(s.title,s.line,s.icon,'station',s.key)).join('')+[[4,'choices','מה מתאים לי','בחירת מסלול ועזרה'],[11,'activities','פעילויות קטנות','להצטרף בשביל החברה'],[18,'plan','תכנון מפגש ראשון','זוג דמויות שכבר הסכים להתכונן'],[21,'after','אחרי המפגש','שני משובים פרטיים'],[24,'desk','ליווי דייר/ת','תפקיד המלווה והזמן שהושקע'],[26,'metrics','מדדי הפיילוט','הזדמנויות, חברות והחוויה האישית']].map(([n,k,t,d])=>mark(n,actionRow(t,d,'users','l4Station',k))).join('')+'</div>'+quiet('חזרה לבית של דנה','jump','home','house')+'</div>';
+  return '<div class="pad stack"><div class="smallhead"><h1>מפת המסע</h1>'+listen(instructions.map)+'</div><p>בחרו מה לנסות בהדגמה.</p><div class="list">'+profileStations.map(s=>actionRow(s.title,s.line,s.icon,'profileStation',s.key)).join('')+stations.map(s=>actionRow(s.title,s.line,s.icon,'station',s.key)).join('')+[[4,'choices','מה מתאים לי','בחירת מסלול ועזרה'],[11,'activities','פעילויות קטנות','להצטרף בשביל החברה'],[18,'plan','תכנון מפגש ראשון','זוג דמויות שכבר הסכים להתכונן'],[21,'after','אחרי המפגש','שני משובים פרטיים'],[24,'desk','ליווי דייר/ת','תפקיד המלווה והזמן שהושקע'],[26,'metrics','מדדי הפיילוט','הזדמנויות, חברות והחוויה האישית']].map(([n,k,t,d])=>mark(n,actionRow(t,d,'users','l4Station',k))).join('')+'</div>'+quiet('חזרה לבית של דנה','jump','home','house')+'</div>';
 }
 function enterStation(key){
   const s=stations.find(item=>item.key===key);
@@ -3335,7 +3345,7 @@ document.addEventListener('click',e=>{
  case 'confirmReply':if(page==='chat'&&v===chatId&&(awaitingFirstReply(chat())||assistedChat(chat()))&&$('replyPreview'))deliver($('replyPreview').textContent,true);break;
  case 'editReply':case 'focusReply':dialogFocus=$('msg');closeDialog();$('msg')?.focus();break;
  case 'idea':putMessage(v);break;case 'dictate':dictate();break;case 'startMic':startMic();break;case 'sampleMic':if($('msg'))putMessage(($('msg').value+' היי, איזה דבר שימח אותך היום?').trim());break;
- case 'journey':jump('journey');break;case 'station':enterStation(v);break;
+ case 'journey':jump('journey');break;case 'station':enterStation(v);break;case 'profileStation':enterInterview(v);break;
  case 'peer':switchSide();break;case 'exchange':exchange();break;
  case 'consent':decideExchange('approve');break;case 'cancelExchange':decideExchange('cancel');break;
  case 'declineExchange':decideExchange('decline');break;case 'retryExchange':decideExchange('retry');break;
@@ -3411,8 +3421,7 @@ function openEntry(){const station=location.hash.slice(1);
  if(station==='team-review'){showRevisionMarks=true;phonePreview.admin=true;enterStaff('admin');return}
 
  if(['profile-interview','about-questions'].includes(station)){
-  setUser('previewExample','interview');
-  if(page==='interview'&&station==='about-questions'){interview=6;storeDraft();render(true)}
+  enterInterview(station);
   return;
  }
  if(station==='help'){setUser('dana');returnPage='home';go('help');return}if(['requests','chats'].includes(station)){jump(station);return}if(station==='profiles'){jump('discover');return}if(['yael-chat','noam-chat'].includes(station)){enterMixedDemo(station==='yael-chat'?'yael':'noam');return}if(station==='resident-city'){setUser('dana');startEdit();return}if(station==='chat-setup'){worker=apartmentWorkers[workerCity()];enterStaff('worker');invite();return}if(station==='independent-chat'){chatId='ron';setUser('dana','chat');return}if(['guided','report','block','meeting'].includes(station)){enterStation(station);return}if(location.hash==='#research'){render();openReview();return}if(location.hash==='#resident'){jump('resident');return}if(['#worker','#worker-mobile','#guide-mobile'].includes(location.hash)){phonePreview.worker=true;worker=apartmentWorkers[workerCity()];enterStaff('worker');return}if(['#manager','#admin','#admin-mobile'].includes(location.hash)){phonePreview.admin=true;enterStaff('admin');return}if(location.hash==='#decisions'){enterStaff('admin');staffTab='decisions';render(true);return}render()}
