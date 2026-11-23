@@ -1,0 +1,18 @@
+/* Flexible photo allocation keeps the readable text and actions in one page. */
+.deck.paged-deck{height:100%;min-height:0;--page-photo:clamp(145px,calc(222cqi - 424px),330px)}
+.deck.paged-deck>.card,.deck.paged-deck.final-deck>.card{display:flex;flex:1;flex-direction:column;min-height:0;overflow:visible}
+.deck.paged-deck>.card>.visual{height:var(--page-photo);min-height:var(--page-photo);max-height:330px;flex:0 0 var(--page-photo);border-radius:22px 22px 0 0}
+.deck.paged-deck .visual>img{object-fit:cover;object-position:50% 38%}
+.deck.paged-deck>.card>.body{flex:0 0 auto;min-height:0;display:grid;align-content:start;gap:6px;padding:8px 12px 10px}
+.deck.paged-deck .body>p{font-size:1rem;line-height:1.45;white-space:pre-line;overflow-wrap:anywhere}
+.deck.paged-deck .profile-heading{margin-top:0}
+.deck.paged-deck .profile-heading>.cover-thumb{width:54px;min-width:44px}
+.deck.paged-deck .profile-title{font-size:1.26rem}
+.deck.paged-deck .profile-title-row{gap:6px}
+.deck.paged-deck .notice{padding:8px 10px}
+.deck.paged-deck .notice .chip{padding:2px 8px;font-size:.87rem}
+@container(max-width:335px){.deck.paged-deck>.card>.visual{min-height:125px}.deck.paged-deck>.card>.body{padding:6px 8px;gap:3px}.deck.paged-deck .profile-title{font-size:1.15rem}.deck.paged-deck .profile-heading>.cover-thumb{width:44px}}
+/* Enlarged reading remains operable on unusually short screens. */
+.large-reading .deck.paged-deck{height:auto;min-height:100%}
+.large-reading .deck.paged-deck>.card{flex:none;overflow:visible}
+.large-reading .deck.paged-deck>.card>.visual{flex:none;height:180px;min-height:180px}

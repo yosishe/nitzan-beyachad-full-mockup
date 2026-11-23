@@ -1,0 +1,238 @@
+{
+  "source_commit": "d62b68fa7b84364e158cc6fb1588a568e5828656",
+  "variant": "Complete paginated mockup with the original 12-step interview",
+  "files": [
+    {
+      "path": "audioClips-fc76460235.js",
+      "sha256": "fc76460235de290a855c9d32172f7d14f39a6da10d5dc9f15e2a995e394ce7e8"
+    },
+    {
+      "path": "index.html",
+      "sha256": "feaeb3e94dff948848d0c0b58210b6cbda14aa6971d6c4fa3ff69506f707c5b5"
+    },
+    {
+      "path": "paged-profile.css",
+      "sha256": "bc0f08e99d6b6dc7f2fe46a1e43c9ee48159c64b5033d493db0bdd757901282a"
+    },
+    {
+      "path": "paged-profile.js",
+      "sha256": "53b55192a6501db5e448cf940b134e1f89fae30f807fba6d7f7146adafeaa26d"
+    },
+    {
+      "path": "phone-photo.css",
+      "sha256": "20ad41abf22629962f1d6fe951b477ea491d5a8b1a7547ad70a0a6fb0eaf89ba"
+    },
+    {
+      "path": "phone-photo.js",
+      "sha256": "d14791225cd739337568a933d4d10c8759c87a0f60bf63016f8e210c1c15932a"
+    },
+    {
+      "path": "pictures-0b4a83f6c1.js",
+      "sha256": "0b4a83f6c1f7a5c67f740dc6e60c17ad74f955e6b2da1d24f6e660b9a8480944"
+    },
+    {
+      "path": "resident-photos-v1.js",
+      "sha256": "68319c2de9e092bdd7baf208b4173dc9fea1088cf4b3d95763933b263ff636b7"
+    },
+    {
+      "path": "resident-photos-v1/avi-1.webp",
+      "sha256": "364af302891a2a732e357aa787397c9a203ab7d5fd9df9c6db4465fab4b451c0"
+    },
+    {
+      "path": "resident-photos-v1/avi-2.webp",
+      "sha256": "18ca0f3716096d02b5c090925a1c9a0ab533e5a7c60057ed5e7cc772041b9d33"
+    },
+    {
+      "path": "resident-photos-v1/dana-1.webp",
+      "sha256": "4db4cc468cc9b0627c3f6dcef7cd51d1ec961053dc3a81e027a74066c41bfea4"
+    },
+    {
+      "path": "resident-photos-v1/dana-2.webp",
+      "sha256": "8b6a67cf46791e70d45411f0b7ec122c91f99b4ab3617d882e8f85640ec4fd53"
+    },
+    {
+      "path": "resident-photos-v1/dana-3.webp",
+      "sha256": "79b8406eefd87c06beabe5689ebb71040b62a9f1d037429589b7ec5ac2afff3f"
+    },
+    {
+      "path": "resident-photos-v1/draftExample-1.webp",
+      "sha256": "5a71bab005563a105d6f5318febad0daeceb9a2f7ab8d28749f6fa2f5b732f48"
+    },
+    {
+      "path": "resident-photos-v1/draftExample-2.webp",
+      "sha256": "b9e09dd45bcfd45c32f59d94666e407f40a8e2b78bea15180ab84b35a60619d3"
+    },
+    {
+      "path": "resident-photos-v1/michal-1.webp",
+      "sha256": "0abd40d95d65ea2ba5fbde07b948049556639f4678c9683461889ade91162227"
+    },
+    {
+      "path": "resident-photos-v1/michal-2.webp",
+      "sha256": "1e22f429c9dbb2dd862f997258fc2e9d734f983ab00ef0c786e07f817ef10281"
+    },
+    {
+      "path": "resident-photos-v1/p0-1.webp",
+      "sha256": "fbb23b238ca2d84ce5cdb6ce4a51fcd9c84ee957110674b0a4721253e7ffd1b4"
+    },
+    {
+      "path": "resident-photos-v1/p0-2.webp",
+      "sha256": "feea0d311de3f143eaab6f27ab152cf5c6bd156e186fb442303e558405d3871c"
+    },
+    {
+      "path": "resident-photos-v1/p0-3.webp",
+      "sha256": "e2850903e32e3b34fea2bf35f7d486d3e4aaf8341f01ddee26b6a90e6f67d379"
+    },
+    {
+      "path": "resident-photos-v1/p0-4.webp",
+      "sha256": "6f8ec7db778f7f1df920e6f55d15ed3efd830edbbcb3fb145c5a3d70b6867928"
+    },
+    {
+      "path": "resident-photos-v1/p0-5.webp",
+      "sha256": "a87bfeadfad2998b09c4ca4c7333706790e77e830f069075eed88915eee527f5"
+    },
+    {
+      "path": "resident-photos-v1/p1-1.webp",
+      "sha256": "c531d38d88e9ca6d035df26b95ac8e144f695aca3d24412645af8d705b78a23e"
+    },
+    {
+      "path": "resident-photos-v1/p1-2.webp",
+      "sha256": "bf5649b53988dd667e6cf84605cf037fc98c7e9a3704b5080b012a739224b0bd"
+    },
+    {
+      "path": "resident-photos-v1/p10-1.webp",
+      "sha256": "2e38b60424db5e85ab2aeb08f698ba703170f784e383d299f8210e9aa0c3973d"
+    },
+    {
+      "path": "resident-photos-v1/p10-2.webp",
+      "sha256": "ce35b9fddb4a2d295f1b039629013256b63b7f8ec31a310aff32b5f4115c8078"
+    },
+    {
+      "path": "resident-photos-v1/p11-1.webp",
+      "sha256": "aeb7f404b56c450f43154553f0ac74a302fdc38faabaa672700f444bd4f268f3"
+    },
+    {
+      "path": "resident-photos-v1/p11-2.webp",
+      "sha256": "34d1cc3aaaf65f49846accd0c78f506830d42449980bcb94af196c9dc42016d4"
+    },
+    {
+      "path": "resident-photos-v1/p2-1.webp",
+      "sha256": "b7fac4ba6fb524f176304776a9d03cc4e6990e6bbe5ed87266e80e50413ee2f8"
+    },
+    {
+      "path": "resident-photos-v1/p2-2.webp",
+      "sha256": "95e2c73f24fe3c5d5247e1283b7efcbe8b33d953ead1f766f7d6cf5fdab7dd74"
+    },
+    {
+      "path": "resident-photos-v1/p3-1.webp",
+      "sha256": "409951a0c415bf88b40ea33555e79df3bbf4a43d347a6d143c085548cabe86e8"
+    },
+    {
+      "path": "resident-photos-v1/p3-2.webp",
+      "sha256": "3341c5efc3e370aa833e8fe515efa2ce6365d6192be450bda80060fd7f94ad0d"
+    },
+    {
+      "path": "resident-photos-v1/p4-1.webp",
+      "sha256": "83541bcd5721ef0c7b97770c8f1c6e0fe47a07e6eafe556a5b982fb7a3f54608"
+    },
+    {
+      "path": "resident-photos-v1/p4-2.webp",
+      "sha256": "9e42686a7b7ec3df31e1e85422109587c704dbf5a21b501fa725837291f0f63c"
+    },
+    {
+      "path": "resident-photos-v1/p5-1.webp",
+      "sha256": "2c79b53a713d9ee4fd4004abd2058d51f4d7bab1eaac35e8eb4bcd6edbeadb76"
+    },
+    {
+      "path": "resident-photos-v1/p5-2.webp",
+      "sha256": "5d3b18a619fa9d11409bab962432f2b43e271e9c7f5805b771a770c5f986ca79"
+    },
+    {
+      "path": "resident-photos-v1/p6-1.webp",
+      "sha256": "f61e6faa661f7fe6445aaa4c8416eccbb1ff57bbfc07bf16060b5b67c46e60fc"
+    },
+    {
+      "path": "resident-photos-v1/p6-2.webp",
+      "sha256": "4133b36d4e576fd0dfff58a0384efc3816705d5926e373ecfee1449509d5c8cb"
+    },
+    {
+      "path": "resident-photos-v1/p7-1.webp",
+      "sha256": "41b2543a7122c8b120cff39812d65b94b4bada36803dbebdd1cbd2bb9244d16c"
+    },
+    {
+      "path": "resident-photos-v1/p7-2.webp",
+      "sha256": "cce4e451cd7025a0c52ee08e82530c83913f48a3a69a28cb5c9cce28c5e5621b"
+    },
+    {
+      "path": "resident-photos-v1/p8-1.webp",
+      "sha256": "df6ba49843915882020767a03683ed708acbdbe238e7f7d84ecbe717566c0e91"
+    },
+    {
+      "path": "resident-photos-v1/p8-2.webp",
+      "sha256": "e4f8f379a780e7dd5515443b3f8291e7a2545384ace0d574b39acbf2aa6a6d01"
+    },
+    {
+      "path": "resident-photos-v1/p9-1.webp",
+      "sha256": "76271346cf73efef1b691bf497e185c1db13d3329a59ac92f63305c81966c7c6"
+    },
+    {
+      "path": "resident-photos-v1/p9-2.webp",
+      "sha256": "7c4da6574d40e55583648e78cb6529d50f31f933f6ac5f1fcee94f7c252e110c"
+    },
+    {
+      "path": "resident-photos-v1/previewExample-1.webp",
+      "sha256": "a7b919c410832bacd960d6fa55f50978eb3d9a88b4384bcee1adbbc5dc16f796"
+    },
+    {
+      "path": "resident-photos-v1/previewExample-2.webp",
+      "sha256": "9c648a6ef366c64bf6a3a4b3ee16f5d5eb086043e13214dc867325dbdac41dc2"
+    },
+    {
+      "path": "resident-photos-v1/restExample-1.webp",
+      "sha256": "9aa7f1df6caba09c160ff16d36e92b03c220988d65000c54900345e7852ec9e2"
+    },
+    {
+      "path": "resident-photos-v1/restExample-2.webp",
+      "sha256": "52a6eee41e31942b71dc387dac21ef5502579fb726bd55d2270063c359d7cbf1"
+    },
+    {
+      "path": "resident-photos-v1/reviewExample-1.webp",
+      "sha256": "e1aa67cdfc7295784b04f61aed76db7d313c73cd8b18193befab6f526e739e77"
+    },
+    {
+      "path": "resident-photos-v1/reviewExample-2.webp",
+      "sha256": "62610b44067845d61f718c9ded2e85de838e6ae71a49406855055bf59106b758"
+    },
+    {
+      "path": "resident-photos-v1/ron-1.webp",
+      "sha256": "a3c772a2ff98dbe6545440a6b71b1ff208b0f0b292c92ee95524a5ff53368f78"
+    },
+    {
+      "path": "resident-photos-v1/ron-2.webp",
+      "sha256": "ee9257280229d600347dd374a4776b0c59ecfb6d95c00e839ff7362e22ca1b3e"
+    },
+    {
+      "path": "resident-photos-v1/sara-1.webp",
+      "sha256": "a6aed746aab275702a2ed9f4174390a35144d41cf5035f0c02e7b3d72226301e"
+    },
+    {
+      "path": "resident-photos-v1/sara-2.webp",
+      "sha256": "3db558733914fda6242a8d24fdb8c231410f76c685213d1c5ffe58e123445cfa"
+    },
+    {
+      "path": "resident-photos-v1/yossi-1.webp",
+      "sha256": "4818fa14152bfd1df8594ab2d836f3c7d3bdb0ae565d33502022b3476133dff3"
+    },
+    {
+      "path": "resident-photos-v1/yossi-2.webp",
+      "sha256": "ddfbd491b62da4c14c47c8201d1494a517ddc6b64b44ed7ebea2848d18417760"
+    },
+    {
+      "path": "resident-photos-v1/yossi-3.webp",
+      "sha256": "33b94cea422a146195bc7b69f46d3cdeab735eb352e97bf617e66cb91e605831"
+    },
+    {
+      "path": "resident-photos-v1/yossi-4.webp",
+      "sha256": "0c9b94332d432b73b1d736a3efa77b8fc5dd0cbd476b7e40098287977ef92112"
+    }
+  ]
+}

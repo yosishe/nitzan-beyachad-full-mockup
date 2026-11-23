@@ -1,0 +1,4 @@
+/* Photo fullscreen belongs to the simulated phone, not the presenter's monitor. */
+#dialog[open]:has(.photo-viewer){inset:auto;left:var(--photo-phone-left,0px);top:var(--photo-phone-top,0px);width:var(--photo-phone-width,100vw);height:var(--photo-phone-height,100dvh);max-width:none;max-height:none;margin:0;border:0;border-radius:var(--photo-phone-radius,0px);overflow:hidden;background:#000}
+@media(min-width:761px){#dialog:has(.photo-viewer)::backdrop{background:transparent;backdrop-filter:none}}
+@media(max-width:315px){.mast-in{padding-inline:2px;gap:1px}.mast .mast-actions{gap:0}.mast .wordmark{font-size:.8rem}}
